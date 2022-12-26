@@ -45,11 +45,43 @@ main {
   border-radius: 15px;
 }
 
-.img-main {
-  width: 100%;
+.img-box {
+  background: url(../images/image-equilibrium.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 302px;
+  height: 302px;
   border-radius: 8px;
   margin-bottom: var(--24px);
+  position: relative;
 }
+
+.img-box:hover::after {
+  background-color: rgba(0, 255, 248, 0.5);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.icon-eye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.img-box:hover .icon-eye {
+  z-index: 999;
+  opacity: 1;
+}
+
+/* .img-main {
+  width: 100%;
+} */
 
 .primary-text {
   font-size: var(--22px);
