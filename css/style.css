@@ -49,7 +49,6 @@ main {
   background: url(../images/image-equilibrium.jpg);
   background-size: cover;
   background-position: center;
-  width: 302px;
   height: 302px;
   border-radius: 8px;
   margin-bottom: var(--24px);
@@ -79,15 +78,20 @@ main {
   opacity: 1;
 }
 
-/* .img-main {
-  width: 100%;
-} */
-
-.primary-text {
+.link-eq:link,
+.link-eq:visited {
   font-size: var(--22px);
   color: #fff;
   font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
   margin-bottom: var(--16px);
+}
+
+.link-eq:hover,
+.link-eq:active {
+  color: #00fff8;
 }
 
 .text {
@@ -158,6 +162,14 @@ main {
   color: #8bacd9;
 }
 
-.text-author span {
+.text-author a:link,
+.text-author a:visited {
   color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.text-author a:hover,
+.text-author a:active {
+  color: #00fff8;
 }
