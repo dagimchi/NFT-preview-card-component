@@ -27,6 +27,7 @@ html {
 body {
   font-family: "Outfit", sans-serif;
   background-color: #0d192c;
+  padding: 30px;
 }
 
 main {
@@ -172,4 +173,24 @@ main {
 .text-author a:hover,
 .text-author a:active {
   color: #00fff8;
+}
+
+/* ***********************
+Safari gap fix
+*********************** */
+
+.no-flexbox-gap .card {
+  margin-bottom: 10px;
+}
+
+.no-flexbox-gap .icon-eq {
+  margin-right: 6.48px;
+}
+
+.no-flexbox-gap .icon-clock {
+  margin-right: 7.7px;
+}
+
+.no-flexbox-gap .img-author {
+  margin-right: 16px;
 }
